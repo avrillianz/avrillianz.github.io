@@ -3,7 +3,7 @@
 body {
     padding:0px;
     margin:0px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80") center center;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80") center center;
     background-size:cover;
     width:100vw;
     height:100vh;
@@ -14,7 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background:rgb(255, 50, 50);
+    background:#3498db;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ body {
     width:50px;
     height:50px;
     border:12px solid #fff;
-    border-bottom:12px solid rgb(255, 50, 50);
+    border-bottom:12px solid #3498db;
     border-radius:50%;
     margin:0;
 }
@@ -47,10 +47,10 @@ body {
     display:inline-block;
 }
 .box1 {
-    background:rgb(255, 50, 50);
+    background:#3498db;
 }
 .box2 {
-    background:rgb(255, 50, 50);
+    background:#3498db;
     margin-left:-5px;
 }
 #menu {
@@ -79,12 +79,12 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    color:rgb(255, 50, 50);
+    color:#3498db;
     font-size:70px;
     text-decoration:underline;
 }
 #about {
-    width:10vw;
+    width:8vw;
     height:10vw;
     text-align:center;
     font-size:25px;
@@ -102,7 +102,7 @@ body {
     border-radius:0px 0px 100px 100px;
 }
 #work {
-    width:10vw;
+    width:8vw;
     height:10vw;
     text-align:center;
     font-size:25px;
@@ -120,7 +120,7 @@ body {
     border-radius:0px 0px 100px 100px;
 }
 #contact {
-    width:10vw;
+    width:8vw;
     height:10vw;
     text-align:center;
     font-size:25px;
@@ -137,15 +137,15 @@ body {
     border-radius:100px 100px 0px 0px;
 }
 #about:hover {
-    background:rgba(255,50,50,0.9);
+    background:#2980b9;
     cursor:pointer;
 }
 #work:hover {
-    background:rgba(255,50,50,0.9);
+    background:#2980b9;
     cursor:pointer;
 }
 #contact:hover {
-    background:rgba(255,50,50,0.9);
+    background:#2980b9;
     cursor:pointer;
 }
 #middle table {
@@ -154,6 +154,11 @@ body {
 }
 #middle table tr td {
     text-align:center;
+}
+
+img {
+    border-radius: 50%; 
+    margin: 10px auto;
 }
 .social {
     color:#fff;
@@ -165,13 +170,13 @@ body {
 }
 .social:hover { 
     cursor: pointer;
-    color:rgb(255, 50, 50);
+    color:#3498db;
 }
 .container {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 50, 50);
+    background:#3498db;
     color:#fff;
     z-index:9;
     position:fixed;
@@ -191,7 +196,7 @@ body {
     margin:8vh 0px;
 }
 #used div{
-    font-size:14px !important;
+    font-size:20px !important;
     display:inline-block;
     padding:8px 10px;
     border:2px solid #fff;
@@ -204,6 +209,7 @@ body {
 #used div:hover {
     cursor:text;
 }
+
 .container h1 {
     font-size:60px;
     text-decoration:underline;
@@ -225,13 +231,13 @@ body {
 }
 .btn_one:hover {
     cursor:pointer;
-    color:rgb(255, 50, 50);
+    color:#3498db;
     background:#fff;
 }
 .btn_two {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
-    color:rgb(255, 50, 50);
+    color:#3498db;
     background:#fff;
     border:3px solid #fff;
     padding:8px 40px;
@@ -310,16 +316,18 @@ body {
     background: #fff; 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 50, 50); 
+    background: #3498db; 
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 50, 50,0.8); 
 }
 ::selection {
 	color: #fff;
-	background: rgb(255, 50, 50);
+	background: #3498db;
 }
-
+ol li {
+    font-size: 20px;
+}
 @media (max-width: 800px){ 
     #about {
         display:none;
@@ -336,9 +344,14 @@ body {
     #middle {
         width:90vw;
         padding:0px 5vw;
+        margin-top: 2em;
     }
     #middle table {
         width:80%;
+    }
+
+    #middle h1 {
+       font-size: 50px;
     }
     .container form input {
         width:90%;
